@@ -1,0 +1,70 @@
+
+/* Set default font size and family */
+* {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Center titles and main content block */
+h1, h2, .main-content {
+    text-align: center;
+}
+
+/* Set color for subtitles */
+h2 {
+    color: #006EB6;
+}
+
+/* Limit content inside the box to a maximum width of 600px */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px; /* Add padding to center content more */
+    text-align: center;
+}
+
+/* Adjust titles with letter-spacing and text-transform */
+h1, h2 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+/* Resize logo image */
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0; /* Add padding to center the logo more */
+}
+
+/* Override paragraph alignment */
+p {
+    text-align: left;
+    padding: 10px 0; /* Add padding to paragraphs */
+}
+
+/* Center-align paragraphs inside .content */
+.content p {
+    text-align: center;
+    padding: 10px 0; /* Add padding to paragraphs */
+}
+
+/* Center-align ordered list inside .content */
+.does-list {
+    margin: 0 auto; /* Center the ordered list */
+    padding: 0 20px; /* Add padding to push content away from edges */
+    text-align: left; /* Ensure list items are left-aligned */
+    max-width: 600px; /* Limit the width of the list */
+}
+
+/* Dark theme styles */
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark h2 {
+    color: #ccc;
+}
