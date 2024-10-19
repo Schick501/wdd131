@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Read for Fun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kids Read for Fun</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="book-info">
+            <div class="book-meta">
+                <p><strong>Date:</strong> July 5, 2022</p>
+                <p><strong>Age:</strong> 10-14</p>
+                <p><strong>Genre:</strong> Fantasy</p>
+                <p><strong>Rating:</strong> ★★★★☆</p>
+            </div>
+            <div class="book-details">
+                <h2>Septimus Heap Book One: Magyk</h2>
+                <div class="book-cover">
+                    <img src="book-cover-placeholder.jpg" alt="Book cover" width="200" height="300">
+                </div>
+                <p class="book-description">
+                    Lorem ipsum dolor sit amet, et delectus accommodare his consul copiosae legendos at vix ad putent delectus.
+                </p>
+            </div>
+        </section>
+
+        <aside class="filter-options">
+            <h3>Filter Books</h3>
+            <form action="#" method="GET">
+                <label for="sort">Sort:</label>
+                <select id="sort" name="sort">
+                    <option value="date">Date</option>
+                    <option value="rating">Rating</option>
+                </select>
+
+                <label for="age">Age:</label>
+                <select id="age" name="age">
+                    <option value="all">All</option>
+                    <option value="10-14">10-14</option>
+                    <option value="15-18">15-18</option>
+                </select>
+
+                <label for="genre">Genre:</label>
+                <select id="genre" name="genre">
+                    <option value="all">All</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                </select>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="all">All</option>
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                </select>
+            </form>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kids Read for Fun</p>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>
