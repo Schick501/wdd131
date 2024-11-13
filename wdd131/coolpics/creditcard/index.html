@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credit Card Submission Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card-container" id="cardContainer">
+    <!-- Front side (form) -->
+    <div class="card-form">
+        <div class="chip"></div>
+        <h2>Credit Card Payment</h2>
+        <form action="#" method="POST">
+            <label for="cardholder">Cardholder Name</label>
+            <input type="text" id="cardholder" name="cardholder" placeholder="John Doe" required>
+
+            <label for="card-number">Card Number</label>
+            <input type="number" id="card-number" name="card-number" placeholder="1234 5678 9101 1121" required>
+
+            <div class="inline-fields">
+                <div>
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                </div>
+                <div>
+                    <label for="cvv">CVV</label>
+                    <input type="number" id="cvv" name="cvv" placeholder="123" required onfocus="flipCard()" onblur="unflipCard()">
+                </div>
+            </div>
+
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
+
+    <!-- Back side (CVV) -->
+    <div class="card-back">
+        <div class="black-strip"></div>
+        <label for="cvv-back">Enter CVV</label>
+        <input type="number" id="cvv-back" name="cvv-back" placeholder="123" required>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

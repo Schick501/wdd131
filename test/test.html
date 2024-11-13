@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kids Read for Fun</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Sidebar -->
+    <aside>
+      <h2>Kids Read for Fun</h2>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main>
+      <div class="grid" id="articles-container">
+        <!-- Articles will be dynamically injected here by JavaScript -->
+      </div>
+    </main>
+
+    <!-- Right Sidebar (Filters) -->
+    <aside>
+      <div class="filters">
+        <form>
+          <label for="sort">Sort by:</label>
+          <select id="sort">
+            <option value="date">Date</option>
+            <option value="rating">Rating</option>
+          </select>
+
+          <label for="age">Age:</label>
+          <select id="age">
+            <option value="all">All</option>
+            <option value="10-14">10-14</option>
+            <option value="12-16">12-16</option>
+          </select>
+
+          <label for="genre">Genre:</label>
+          <select id="genre">
+            <option value="all">All</option>
+            <option value="Fantasy">Fantasy</option>
+          </select>
+
+          <label for="rating">Rating:</label>
+          <select id="rating">
+            <option value="all">All</option>
+            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+            <option value="⭐⭐⭐">⭐⭐⭐</option>
+          </select>
+        </form>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="test.js"></script>
+</body>
+</html>

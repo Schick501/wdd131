@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Recipe Book</h1>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Find a Recipe!">
+        <button onclick="searchRecipe()">🔍</button>
+    </div>
+
+    <div class="recipe-card">
+        <img src="images/apple-crisp.jpg" alt="images" id="recipeImage">
+        <div class="tags">
+            <span>dessert</span>
+            <span>tag2</span>
+        </div>
+        <h2 id="recipeTitle">Apple Crisp</h2>
+        <div id="recipeRating">★★★★★</div>
+        <p id="recipeDescription">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+    </div>
+
+    <div class="footer">
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <p>&copy; 2023</p>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="recipes.mjs"></script>
+</body>
+</html>
