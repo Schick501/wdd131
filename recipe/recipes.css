@@ -61,3 +61,7 @@ body {
     margin-right: 5px;
     border-radius: 3px;
 }
+.social img {
+    width: 32px; /* Adjust the width as needed */
+    height: 32px; /* Adjust the height as needed */
+}
