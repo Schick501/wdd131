@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Reviews</h1>
+    </header>
+    <main>
+        <section id="add-review">
+            <h2>Add a Book Review</h2>
+            <form id="review-form">
+                <label for="title">Book Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+        <section id="reviews">
+            <h2>All Reviews</h2>
+            <div id="review-list"></div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
