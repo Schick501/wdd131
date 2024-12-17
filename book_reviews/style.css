@@ -61,3 +61,9 @@ button:hover {
     padding: 1rem;
     background-color: #fff;
 }
+
+.review img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
